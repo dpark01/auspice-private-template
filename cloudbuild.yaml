@@ -7,6 +7,6 @@ steps:
   args: ['push', 'gcr.io/${PROJECT_ID}/${REPO_NAME}:${BRANCH_NAME}']
 # Deploy container image to Cloud Run
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['run', 'deploy', 'broad-${REPO_NAME}-${BRANCH_NAME}', '--image', 'gcr.io/${PROJECT_ID}/${REPO_NAME}:${BRANCH_NAME}', '--region', 'us-central1', '--platform', 'managed', '--allow-unauthenticated']
+  args: ['run', 'deploy', '${REPO_NAME}-${BRANCH_NAME}', '--image', 'gcr.io/${PROJECT_ID}/${REPO_NAME}:${BRANCH_NAME}', '--region', 'us-central1', '--platform', 'managed', '--allow-unauthenticated']
 images:
 - gcr.io/${PROJECT_ID}/${REPO_NAME}
