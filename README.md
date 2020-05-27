@@ -20,3 +20,7 @@ More instructions on how this is set up on the Google Compute Platform side:
 
  - https://cloud.google.com/cloud-build/docs/deploying-builds/deploy-cloud-run
  - https://cloud.google.com/run/docs/continuous-deployment-with-cloud-build
+
+This particular template github repo (dpark01/auspice-private-template)
+currently deploys to this publicly accessible Cloud Run URL:
+https://auspice-private-template-master-cp3chkcdyq-uc.a.run.app/
