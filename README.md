@@ -1,4 +1,4 @@
-# auspice_private_template
+# auspice-private-template
 This contains a template git repo that allows for continuous deploy of
 Auspice servers to Google Cloud Run (serverless web via docker)
 via Google Cloud Builder (CI) to Google Container Registery (docker registry)
