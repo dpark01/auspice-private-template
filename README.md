@@ -7,14 +7,17 @@ github repo. This repo is public, and populated with example data,
 simply fork it to a private repo, add your own data, and set up the
 build triggers.
 
-This repo can contain any number of paired json & md files which comprise a 
-nextstrain dataset with paired narrative.
+This repo can contain any number of json and/or json.gz files (nextstrain
+datasets output from `augur export v2`) and md files (nextstrain narratives
+that reference any of these datasets).
 
 After properly setting up build triggers, each push to this repo will 
 trigger a Google Cloud Build which will build the Dockerfile and push to 
 Google Container Registry. Google Cloud Build will then deploy this 
 container to Google Cloud Run for auto-scaled serverless hosting of the 
-web app.
+web app. The GCR docker images are private, by default. The Cloud Run
+services default to unauthenticated on a public, but obscure, URL
+(modify the cloudbuild.yaml to change that).
 
 More instructions on how this is set up on the Google Compute Platform side:
 
