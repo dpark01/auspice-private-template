@@ -27,3 +27,6 @@ More instructions on how this is set up on the Google Compute Platform side:
 This particular template github repo (dpark01/auspice-private-template)
 currently deploys to this publicly accessible Cloud Run URL:
 https://auspice-private-template-master-cp3chkcdyq-uc.a.run.app/
+
+In most cases, usage will be free or nearly free unless your cloud run
+service is very heavily used. https://cloud.google.com/free
